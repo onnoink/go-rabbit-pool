@@ -21,10 +21,6 @@ type Connection struct {
 	lastUseAt int64
 }
 
-type CloseNotify struct {
-	Id  uuid.UUID
-	Err *amqp.Error
-}
 
 type Pool struct {
 	opts    *options
